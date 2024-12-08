@@ -1,0 +1,256 @@
+/* Remove espaçamentos e aplica o modelo de box-sizing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define uma fonte padrão */
+    line-height: 1.6; /* Facilita a leitura */
+    color: #333; /* Cor principal do texto */
+    background-color: #f9f9f9; /* Cor de fundo */
+    margin: 0; /* Remove margens padrão */
+    display: flex; /* Configuração para layout flexível */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura da janela */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #51a4f7; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+header h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte principal */
+}
+
+/* Estilos para subtítulos e links gerais */
+h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+a {
+    font-size: 20px;
+}
+
+ul, li, p {
+    font-size: 15px; /* Ajuste o tamanho conforme desejado */
+    line-height: 1.6; /* Mantém um bom espaçamento entre as linhas */
+}
+
+p {
+    text-align: justify;
+}
+
+/* Navegação principal */
+nav {
+    text-align: center; /* Centraliza os itens de navegação */
+    margin: 5px 0; /* Espaçamento vertical */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista na horizontal */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: #51a4f7; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#menu-principal {
+    font-size: 1.2em; /* Tamanho maior para o menu principal */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Área de conteúdo principal */
+main {
+    padding: 20px; /* Espaçamento interno */
+    max-width: 800px; /* Largura máxima */
+    margin: auto; /* Centraliza o conteúdo */
+    background: white; /* Fundo branco para destacar o conteúdo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o texto */
+    flex: 1; /* Ocupa o espaço restante no layout flexível */
+}
+
+/* Links do portfólio */
+#link-portfolio, .link_portfolio {
+    text-decoration: none;
+    color: #0073e6; /* Cor azul para links */
+}
+
+.link_portfolio:hover, #link-portfolio:hover {
+    text-decoration: underline;
+}
+
+/* Seção de portfólio */
+#portfolio {
+    font-size: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Justifica o texto */
+}
+
+#portfolio a {
+    margin-top: 30px; /* Espaçamento entre links */
+    display: block; /* Faz os links ocuparem uma linha inteira */
+}
+
+/* Estilo para cada projeto no portfólio */
+.projeto {
+    margin-bottom: 20px; /* Espaçamento entre projetos */
+}
+
+/* Centralização de links em uma seção */
+#links {
+    text-align: center;
+}
+
+.link-container {
+    display: flex; /* Layout flexível para os links */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 50px; /* Espaçamento entre os links */
+    margin-top: 10px;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+/* Seções de texto*/
+.texto-sobre,
+.texto-formacao,
+.texto-portfolio {
+    font-size: 12px; 
+    text-align: justify; /* Justifica o texto */
+    margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+.texto-sobre {
+    padding-top: 50px; /* Espaçamento superior maior */
+}
+
+.texto-formacao,
+.texto-portfolio {
+    padding-top: 10px;
+    margin-left: 40px; /* Indentação à esquerda */
+}
+
+/* Justificação de listas */
+.lista-justificada {
+    text-align: justify;
+    padding: 0;
+    list-style-position: inside;
+}
+
+/* Espaçamento entre listas */
+.formacao-academica {
+    margin-bottom: 20px; 
+}
+/* Formatação do formulário de contato */
+#contato {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.espaco {
+    margin-bottom: 20px; /* Ajuste a quantidade de espaço conforme necessário */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 0.9em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinha a label à esquerda */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    background-color: #51a4f7; /* Cor de fundo do botão */
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3f8de5; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno */
+    background-color: #333; /* Fundo escuro */
+    color: white; /* Texto branco */
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0; /* Espaçamento vertical */
+    text-align: center;
+}
+
+footer a {
+    color: #51a4f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Destaca links no hover */
+}
