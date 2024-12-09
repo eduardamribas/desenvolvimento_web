@@ -8,7 +8,7 @@
 /* Estilização geral do corpo da página */
 body {
     font-family: 'Arial', sans-serif; /* Define uma fonte padrão */
-    line-height: 1.6; /* Facilita a leitura */
+    line-height: 1.6; 
     color: #333; /* Cor principal do texto */
     background-color: #f9f9f9; /* Cor de fundo */
     margin: 0; /* Remove margens padrão */
@@ -40,8 +40,8 @@ a {
 }
 
 ul, li, p {
-    font-size: 15px; /* Ajuste o tamanho conforme desejado */
-    line-height: 1.6; /* Mantém um bom espaçamento entre as linhas */
+    font-size: 15px; /* Ajuste o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
 }
 
 p {
@@ -72,7 +72,7 @@ nav ul li a {
 }
 
 #menu-principal {
-    font-size: 1.2em; /* Tamanho maior para o menu principal */
+    font-size: 1.2em; /* Define o tamanho da fonte */
 }
 
 nav ul li a:hover {
@@ -84,9 +84,9 @@ main {
     padding: 20px; /* Espaçamento interno */
     max-width: 800px; /* Largura máxima */
     margin: auto; /* Centraliza o conteúdo */
-    background: white; /* Fundo branco para destacar o conteúdo */
+    background: white; /* Fundo branco */
     border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreamento */
     text-align: center; /* Centraliza o texto */
     flex: 1; /* Ocupa o espaço restante no layout flexível */
 }
@@ -94,7 +94,7 @@ main {
 /* Links do portfólio */
 #link-portfolio, .link_portfolio {
     text-decoration: none;
-    color: #0073e6; /* Cor azul para links */
+    color: #0073e6; 
 }
 
 .link_portfolio:hover, #link-portfolio:hover {
@@ -185,7 +185,7 @@ main {
 }
 
 .espaco {
-    margin-bottom: 20px; /* Ajuste a quantidade de espaço conforme necessário */
+    margin-bottom: 20px; /* Ajusta a quantidade de espaço */
 }
 
 .form-group {
